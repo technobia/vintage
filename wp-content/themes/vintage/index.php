@@ -18,7 +18,7 @@
         else: ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
     </div>
-
+    <div class="glyphicon glyphicon-adjust"></div>
 </div>
 <div id="delimiter">
 </div>

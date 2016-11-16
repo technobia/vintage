@@ -2,7 +2,7 @@
  * Created by apium on 28/10/2016.
  */
 module.exports = function(grunt) {
-	var scssFiles = 'wp-content/assets/**/*.scss';
+	var scssFiles = 'wp-content/themes/vintage/**/*.scss';
 	var htmlFile = 'template/**/*.html';
 
 	grunt.initConfig({
@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 					outputStyle: 'compressed'
 				},
 				files: {
-					'wp-content/themes/vintage/css/style.min.css': 'wp-content/assets/scss/main.scss'
+					'wp-content/themes/vintage/assets/css/style.min.css': 'wp-content/themes/vintage/assets/scss/main.scss'
 				}
 			}
 		},
