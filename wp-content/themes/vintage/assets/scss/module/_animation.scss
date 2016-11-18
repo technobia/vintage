@@ -1,0 +1,3 @@
+.animate-ease-out {
+  @include vendor(transition, ease-out 0.2s);
+}
