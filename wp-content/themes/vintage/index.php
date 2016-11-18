@@ -3,6 +3,7 @@
 <head>
     <title>Vintage</title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/scripts/bootstrap.min.js"></script>
 </head>
 <body>
 
