@@ -31,7 +31,13 @@
             <li class="item"><a href="#">Tin Tức</a></li>
             <li class="item"><a href="#">Liên hệ</a></li>
             <li class="divine"></li>
-            <li class="item">Tiếng Việt <i class="fa fa-angle-down"></i></li>
+            <li class="item dropdown">
+                Tiếng Việt <i class="fa fa-angle-down"></i>
+                <ul class="list-unstyled dropdown-menu no-margin" style="min-width:90px;">
+                    <li><a href="#">Tiếng Việt</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>
