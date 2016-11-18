@@ -1,3 +1,12 @@
 .animate-ease-out {
   @include vendor(transition, ease-out 0.2s);
 }
+
+.fade-in {
+  animation: fade-in .5s;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
