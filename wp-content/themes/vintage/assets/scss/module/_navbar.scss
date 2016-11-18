@@ -1,0 +1,16 @@
+nav {
+  &.navbar-default {
+    background: $primary;
+    min-height: 120px;
+  }
+
+  .navbar-brand {
+    padding: 0 15px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 90px;
+    }
+  }
+}
