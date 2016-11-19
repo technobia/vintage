@@ -21,7 +21,7 @@
         </a>
     </div>
 
-    <div class="collapse navbar-collapse in" id="navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbar-collapse">
         <div class="navbar-right no-margin">
             <ul class="main-menu list-inline no-margin">
                 <li class="item dropdown">
@@ -40,7 +40,7 @@
                 <li class="item"><a href="#">Hình Ảnh</a></li>
                 <li class="item"><a href="#">Tin Tức</a></li>
                 <li class="item"><a href="#">Liên hệ</a></li>
-                <li class="divine visible-sm"></li>
+                <li class="divine visible-sm visible-md visible-lg"></li>
                 <li class="item dropdown">
                     <a href="#" data-toggle="dropdown">Tiếng Việt <i class="fa fa-angle-down"></i></a>
                     <ul class="list-unstyled dropdown-menu no-margin" style="min-width:90px;">
@@ -56,12 +56,12 @@
     <div id="brands-slide">
         <div class="slideMain">
             <ul class="no-margin slide1">
-                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo.jpg"></a></li>
-                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-vintage.png"></a></li>
-                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo.jpg"></a></li>
-                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-vintage.png"></a></li>
-                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo.jpg"></a></li>
-                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-vintage.png"></a></li>
+                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-1.jpg"></a></li>
+                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-2.jpg"></a></li>
+                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-3.jpg"></a></li>
+                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-4.jpg"></a></li>
+                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-5.jpg"></a></li>
+                <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-6.jpg"></a></li>
             </ul>
         </div>
     </div>
