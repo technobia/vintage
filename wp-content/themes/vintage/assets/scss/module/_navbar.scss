@@ -2,6 +2,8 @@ nav {
   &.navbar-default {
     background: $primary;
     min-height: 120px;
+    position: relative;
+    z-index: 1;
   }
 
   .navbar-brand {
