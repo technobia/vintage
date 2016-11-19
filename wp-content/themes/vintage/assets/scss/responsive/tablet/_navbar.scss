@@ -1,0 +1,30 @@
+nav {
+  &.navbar-default {
+    min-height: 80px;
+  }
+
+  .navbar-brand {
+    height: 80px;
+    img {
+      height: 55px;
+    }
+  }
+
+  .navbar-right {
+    .main-menu {
+      padding-right: 10px;
+      height: 80px;
+      text-align: right;
+
+      .item {
+        height: 44px;
+        padding: 0 5px;
+
+
+        > a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
