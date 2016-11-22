@@ -21,13 +21,13 @@
             </div>
         </div>
         <div class="address">
-            <h1>MTV IMPORT EXPORT TRADING JOINT STOCK COMPANE</h1>
+            <h1>MTV IMPORT EXPORT TRADING JOINT STOCK COMPANY</h1>
             <p>
-                <span>Tel: 08 6660 5068</span>
+                <span>Hotline : 0903 91 95 81</span>
                 <span class="divine"></span>
-                <span>Fax: 08 3744 2342</span>
+                <span>Wine Consultant : 0989 988 509 </span>
             </p>
-            <p>109/8 Nguyen Binh Khiem Street, DaKao Ward, District 1, HCM</p>
+            <p>Showroom: Vintage , 01 Thao Dien str., Dist. 2, HCMC</p>
             <p>
                 <span><i class="fa fa-globe"></i><a href="#">www.vintage.vn</a></span>
                 <span class="divine"></span>

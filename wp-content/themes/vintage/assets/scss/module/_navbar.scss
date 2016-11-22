@@ -105,5 +105,23 @@ nav {
         }
       }
     }
+
+    .languages {
+      &:hover a {
+        opacity: 1 !important;
+      }
+
+      a {
+        margin: 0 5px;
+
+        &:hover {
+          opacity: 0.5 !important;
+        }
+      }
+
+      img {
+        height: 22px;
+      }
+    }
   }
 }

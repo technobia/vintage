@@ -35,13 +35,13 @@
                 <li class="item dropdown">
                     <a href="#" data-toggle="dropdown">Sản Phẩm <i class="fa fa-angle-down"></i></a>
                     <ul class="list-unstyled dropdown-menu no-margin">
-                        <li><a href="#"><i class="fa fa-angle-right"></i>Chile Casas Patronales</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i>Tây Ban Nha Felix Solis</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i>Ý Travaglini</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i>Pháp Producta</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i>Pháp Sovex Grands</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i>Chile San Marco</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i>Chile Paso Fino</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Rượu vang Chile Casas Patronales</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Rượu vang Tây Ban Nha Felix Solis</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Rượu vang Ý Travaglini</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Rượu vang Pháp Producta</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Rượu vang Pháp Sovex Grands</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Rượu vang Chile San Marco</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Rượu vang Chile Paso Fino</a></li>
                     </ul>
                 </li>
                 <li class="item"><a href="#">Hộp Quà</a></li>
@@ -49,12 +49,9 @@
                 <li class="item"><a href="#">Tin Tức</a></li>
                 <li class="item"><a href="#">Liên hệ</a></li>
                 <li class="divine visible-sm visible-md visible-lg"></li>
-                <li class="item dropdown">
-                    <a href="#" data-toggle="dropdown">Tiếng Việt <i class="fa fa-angle-down"></i></a>
-                    <ul class="list-unstyled dropdown-menu no-margin" style="min-width:90px;">
-                        <li><a href="#">Tiếng Việt</a></li>
-                        <li><a href="#">English</a></li>
-                    </ul>
+                <li class="item languages">
+                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/flag-vn.jpg"></a>
+                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/flag-us.jpg"></a>
                 </li>
             </ul>
         </div>

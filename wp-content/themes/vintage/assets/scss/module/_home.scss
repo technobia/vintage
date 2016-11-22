@@ -52,7 +52,7 @@
 
     li {
       float: left;
-      margin: 0 5px;
+      margin: 0 1px;
 
       a {
         position: relative;
@@ -60,7 +60,7 @@
 
         &:before {
           content: "";
-          @include flex-box(5px, 5px, 5px, 5px);
+          @include flex-box(1px, 1px, 1px, 1px);
           @extend .animate-ease-out;
           background: transparent;
 
@@ -75,7 +75,7 @@
 
       img {
         height: 90px;
-        border: 5px solid $primary;
+        border: 2px solid $primary;
       }
     }
   }
