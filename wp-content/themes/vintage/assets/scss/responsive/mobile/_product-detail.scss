@@ -1,0 +1,17 @@
+#product-detail {
+  height: calc(100% - 50px);
+}
+
+.product-detail-inner {
+  padding: 10px;
+}
+
+.product-detail {
+  .content {
+    flex-direction: column;
+
+    > * {
+      width: 100% !important;
+    }
+  }
+}

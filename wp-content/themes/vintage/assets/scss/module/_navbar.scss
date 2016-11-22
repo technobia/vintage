@@ -11,8 +11,14 @@ nav {
     height: 120px;
     display: flex;
     align-items: center;
+
     img {
       height: 90px;
+      @extend .animate-ease-out;
+
+      @media (max-width: 855px) {
+        height: 44px;
+      }
     }
   }
 
