@@ -33,7 +33,6 @@
     <div class="collapse navbar-collapse" id="navbar-collapse">
         <div class="navbar-right no-margin">
             <?php
-
             //            wp_nav_menu(array('menu'=>'Vintage'));
             $lang = get_bloginfo("language");
             $menuName = $lang == 'vi' ? 'vintage-vi' : 'Vintage';
@@ -88,9 +87,16 @@
                 } ?>
 
                     <?php $count++; endforeach; ?>
-                <ul id="flags">
-                    <?php pll_the_languages(array('show_flags'=>1, 'show_names'=>0)); ?>
-                </ul>
+                <li class="divine visible-sm visible-md visible-lg"></li>
+                <li class="item languages">
+                    <a href="<?php echo get_site_url() . "/vi" ?>"><img
+                            src="<?php bloginfo('template_url'); ?>/assets/img/flag-vn.jpg"></a>
+                    <a href="<?php echo get_site_url() . "/en"?>"><img
+                            src="<?php bloginfo('template_url'); ?>/assets/img/flag-us.jpg"></a>
+                </li>
+                <!--<ul id="flags">
+                    <?php /*pll_the_languages(array('show_flags' => 1, 'show_names' => 0)); */ ?>
+                </ul>-->
             </ul>
 
             <!--<ul class="main-menu list-inline no-margin">
@@ -112,8 +118,8 @@
                 <li class="item"><a href="#">Liên hệ</a></li>
                 <li class="divine visible-sm visible-md visible-lg"></li>
                 <li class="item languages">
-                    <a href="#"><img src="<?php /*bloginfo('template_url');  */?>/assets/img/flag-vn.jpg"></a>
-                    <a href="#"><img src="<?php /*bloginfo('template_url');  */?>/assets/img/flag-us.jpg"></a>
+                    <a href="#"><img src="<?php /*bloginfo('template_url'); */?>/assets/img/flag-vn.jpg"></a>
+                    <a href="#"><img src="<?php /*bloginfo('template_url'); */?>/assets/img/flag-us.jpg"></a>
                 </li>
             </ul>-->
         </div>
