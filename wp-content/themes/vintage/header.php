@@ -10,7 +10,6 @@
 <head>
     <title>Tutorial theme</title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/bootstrap.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.rotate.min.js"></script>
@@ -50,7 +49,7 @@
                         $parent_id = $item->ID;
                         if ($menuItems[$key + 1] && $menuItems[$key + 1]->menu_item_parent == $parent_id) { ?>
                             <li class="item dropdown">
-                            <a href="<?php echo $link; ?>" data-toggle="dropdown"><?php echo $title; ?> <i
+                            <a href="<?php echo $link; ?>" data-toggle="dropdown">SẢN PHẨM <i
                                     class="fa fa-angle-down"></i></a>
                             <?php
                         } else {
@@ -115,7 +114,7 @@
                 <li class="item"><a href="#">Hộp Quà</a></li>
                 <li class="item"><a href="#">Hình Ảnh</a></li>
                 <li class="item"><a href="#">Tin Tức</a></li>
-                <li class="item"><a href="#">Liên hệ</a></li>
+                <li class="item"><a href="<?=get_page_link(15)?>">Liên hệ</a></li>
                 <li class="divine visible-sm visible-md visible-lg"></li>
                 <li class="item languages">
                     <a href="#"><img src="<?php /*bloginfo('template_url'); */?>/assets/img/flag-vn.jpg"></a>
