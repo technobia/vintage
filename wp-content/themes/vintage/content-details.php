@@ -1,4 +1,4 @@
-<div id="product-detail">
+<div id="product-detail" class="container-responsive">
     <div class="product-detail-inner">
         <div class="product-detail">
             <h1 class="title"><?php the_title()?></h1>

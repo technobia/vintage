@@ -7,3 +7,10 @@
 @import "home";
 @import "product-detail";
 @import "packager";
+@import "news";
+
+.container-responsive {
+  position: relative;
+  height: calc(100% - 120px);
+  overflow: auto;
+}
