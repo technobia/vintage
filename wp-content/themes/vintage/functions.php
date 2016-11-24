@@ -1,4 +1,88 @@
 <?php
+// Our custom post type function
+function create_post_type()
+{
+    register_post_type('pictures',
+        // CPT Options
+        array(
+            'labels' => array(
+                'name' => __('Pictures'),
+                'singular_name' => __('Picture'),
+                'add_new' => __('Add New'),
+                'add_new_item' => __('Add New Picture'),
+                'edit' => __('Edit'),
+                'edit_item' => __('Edit Picture'),
+                'new_item' => __('New Picture'),
+                'view' => __('View Pictures'),
+                'view_item' => __('View Pictures'),
+                'search_items' => __('Search Pictures'),
+                'not_found' => __('No Pictures found'),
+                'not_found_in_trash' => __('No pictures found in Trash'),
+                'parent' => __('Parent Pictures'),
+            ),
+            'supports' => array('title', 'editor', 'author', 'thumbnail'),
+            'taxonomies' => array('category','post_tag'),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'pictures'),
+        )
+    );
+    register_post_type('news',
+        // CPT Options
+        array(
+            'labels' => array(
+                'name' => __('News'),
+                'singular_name' => __('News'),
+                'add_new' => __('Add New'),
+                'add_new_item' => __('Add New News'),
+                'edit' => __('Edit'),
+                'edit_item' => __('Edit News'),
+                'new_item' => __('New News'),
+                'view' => __('View News'),
+                'view_item' => __('View News'),
+                'search_items' => __('Search News'),
+                'not_found' => __('No News found'),
+                'not_found_in_trash' => __('No News found in Trash'),
+                'parent' => __('Parent News'),
+            ),
+            'supports' => array('title', 'editor', 'author', 'thumbnail'),
+            'taxonomies' => array('category','post_tag'),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'news'),
+        )
+    );
+    register_post_type('gift_box',
+        // CPT Options
+        array(
+            'labels' => array(
+                'name' => __('Gift Box'),
+                'singular_name' => __('Gift Box'),
+                'add_new' => __('Add New'),
+                'add_new_item' => __('Add New Gift Box'),
+                'edit' => __('Edit'),
+                'edit_item' => __('Edit Gift Box'),
+                'new_item' => __('New Gift Box'),
+                'view' => __('View Gift Box'),
+                'view_item' => __('View Gift Box'),
+                'search_items' => __('Search Gift Box'),
+                'not_found' => __('No Gift Box found'),
+                'not_found_in_trash' => __('No Gift Box found in Trash'),
+                'parent' => __('Parent Gift Box'),
+            ),
+            'supports' => array('title', 'editor', 'author', 'thumbnail'),
+            'taxonomies' => array('category','post_tag'),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'gift-box'),
+        )
+    );
+}
+
+// Hooking up our function to theme setup
+add_action('init', 'create_post_type');
+
+
 if (!function_exists('vintage_setup')) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -58,3 +142,5 @@ if (!function_exists('vintage_setup')) :
     }
 endif; // vintage_setup
 add_action('after_setup_theme', 'vintage_setup');
+
+
