@@ -1,13 +1,6 @@
 <?php get_header(); ?>
 <div id="wrapper">
 
-<?php if (have_posts()) {
-    while (have_posts()) {
-        the_post();
-        get_template_part('content');
-    }
-} ?>
-
     <div id="footer">
         <div class="main-brands">
             <div id="brands-slide">
