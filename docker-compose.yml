@@ -6,10 +6,6 @@ services:
     restart: always
     ports:
       - 8080:80
-    networks:
-      default:
-        aliases:
-          - vintage.app
 
   mysql:
     image: mysql:5.7.12
@@ -18,9 +14,3 @@ services:
       - MYSQL_PASSWORD=root
       - MYSQL_DATABASE=vintage
       - MYSQL_ROOT_PASSWORD=root
-    ports:
-      - 3307:3306
-    networks:
-      default:
-        aliases:
-          - vintage.mysql
