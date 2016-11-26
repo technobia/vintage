@@ -49,7 +49,7 @@
                         $parent_id = $item->ID;
                         if ($menuItems[$key + 1] && $menuItems[$key + 1]->menu_item_parent == $parent_id) { ?>
                             <li class="item dropdown">
-                            <a href="<?php echo $link; ?>" data-toggle="dropdown">SẢN PHẨM <i
+                            <a href="<?php echo $link; ?>" data-toggle="dropdown"><?=$title?> <i
                                     class="fa fa-angle-down"></i></a>
                             <?php
                         } else {
