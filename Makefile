@@ -1,8 +1,8 @@
-.PHONY: build delete
+.PHONY: build
 build: docker-image
 
 delete:
-	docker rmi vintage:latest
+	docker rmi -f vintage:latest
 
 docker-image:
 	docker build -t vintage:latest .
