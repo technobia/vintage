@@ -2,16 +2,34 @@
   .item {
     color: $text-color;
     background: $primary;
-    margin: 15px 0;
-    padding: 15px;
+    margin: 15px 0 0;
+    padding: 15px 0;
+    @extend .animate-ease-out;
 
-    .media {
-      &-left {
-        width: 30%;
+    &:hover {
+      background: darken($primary, 7%);
+    }
 
-        img {
-          width: 100%;
+    &-left {
+      img {
+        width: 100%;
+      }
+    }
+
+    &-body {
+      h4 {
+        margin: 0 0 15px 0;
+
+        a {
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          color: $text-color;
         }
+      }
+
+      p {
+        line-height: 24px;
       }
     }
   }
