@@ -10,6 +10,7 @@
 <head>
     <title>Tutorial theme</title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico"/>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/bootstrap.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.rotate.min.js"></script>
