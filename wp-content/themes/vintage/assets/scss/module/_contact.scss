@@ -1,0 +1,67 @@
+#contact {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: $primary;
+  color: $text-color;
+
+  .left {
+    padding: 0;
+  }
+
+  .wpforms {
+    &-form {
+      input {
+        @extend .form-control;
+      }
+
+      textarea {
+        @extend .form-control;
+        height: 150px;
+        resize: none;
+      }
+
+      button {
+        @extend .btn;
+        @extend .btn-primary;
+        width: 75px;
+      }
+    }
+
+    &-field {
+      margin-bottom: 5px;
+    }
+
+    &-label-hide {
+      display: none;
+    }
+  }
+
+  .right {
+    h4 {
+      margin-bottom: 5px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    div {
+      font-size: 12px;
+      margin-bottom: 5px;
+      text-align: center;
+
+      span {
+        display: block;
+        font-size: 10px;
+        font-style: italic;
+        color: rgba(white, 0.75);
+      }
+
+      a {
+        color: white;
+        font-size: 12px;
+      }
+    }
+  }
+}

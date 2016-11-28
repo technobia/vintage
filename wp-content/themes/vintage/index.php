@@ -27,7 +27,7 @@
                     <span><i class="fa fa-globe"></i><a href="#">www.vintage.vn</a></span>
                     <span class="divine"></span>
                     <span><i class="fa fa-envelope-o"></i><a href="mailto:info@vintage.vn">info@vintage.vn</a> - <a
-                            href="mailto:mtvwines@yahoo.com">mtvwines@yahoo.com</a></span>
+                            href="mailto:mtvwines@yahoo.com">hienmtv@gmail.com</a></span>
                 </p>
             </div>
         </div>
