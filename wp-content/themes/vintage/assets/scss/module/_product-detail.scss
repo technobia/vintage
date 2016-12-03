@@ -20,13 +20,15 @@
       float: left;
       padding: 0;
 
-      & + li {
-        &:before {
-          content: '|';
-          float: left;
-          margin: 0 7px;
-          height: 16px;
-        }
+      &:before {
+        content: '|';
+        float: left;
+        margin: 0 7px;
+        height: 16px;
+      }
+
+      &:last-child {
+        content: '';
       }
 
       &.active {
