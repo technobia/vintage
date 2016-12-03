@@ -54,6 +54,10 @@
 
     .description {
       width: 50%;
+
+      em {
+        font-style: italic;
+      }
     }
 
     .image {
