@@ -8,7 +8,8 @@
 get_header();
 
 $categories = get_the_category_by_ID($cat);
-$agrCategory = array('category' => $cat);
+$agrCategory = array('category' => $cat,'posts_per_page' => -1,
+    'numberposts' => -1);
 $postsCategory = get_posts($agrCategory);
 
 ?>

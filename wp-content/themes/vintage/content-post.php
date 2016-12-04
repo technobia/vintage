@@ -1,7 +1,7 @@
 <div id="product-detail" class="container-responsive">
     <div class="product-detail-inner">
         <div class="product-detail">
-            <h1 class="title"><?php the_title()?></h1>
+            <h1 class="title"><?php the_title() ?></h1>
             <ul class="list-inline no-margin list-child">
                 <?php
                 $currentPostId = get_the_ID();
@@ -13,16 +13,19 @@
 
                 $listCategoryOfPost = get_the_category();
                 foreach ($listCategoryOfPost as $categoryOfPost) {
-                    $agrCategory = array('category' => $categoryOfPost->cat_ID);
+                    $agrCategory = array('category' => $categoryOfPost->cat_ID, 'posts_per_page' => -1,
+                        'numberposts' => -1);
                     $postsCategory = get_posts($agrCategory);
+
                     foreach ($postsCategory as $post) {
                         setup_postdata($post);
                         if ($post->ID == $currentPostId) {
                             ?>
-                            <li class="active"><a href="<?php echo esc_url(get_permalink());?>"><?php the_title(); ?></a></li>
+                            <li class="active"><a
+                                    href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a></li>
                         <?php } else {
                             ?>
-                            <li><a href="<?php echo esc_url(get_permalink());?>"><?php the_title(); ?></a></li>
+                            <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a></li>
                         <?php }
                     }
                 }
@@ -31,7 +34,7 @@
             <div class="clearfix"></div>
             <div class="content">
                 <div class="description">
-                    <?php echo $currentContent;?>
+                    <?php echo $currentContent; ?>
                 </div>
                 <div class="image">
                     <img src="<?php echo $thumb_url; ?>">
@@ -57,7 +60,7 @@
                     <p>Serving recommendation: 18°C</p>
                 </div>
                 <div class="image">
-                    <img src="<?php /*bloginfo( 'template_url' ); */?>/assets/img/NequeV.png">
+                    <img src="<?php /*bloginfo( 'template_url' ); */ ?>/assets/img/NequeV.png">
                 </div>
             </div>-->
         </div>
