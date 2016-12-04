@@ -7,19 +7,20 @@
  */
 get_header();
 
-$categories = get_the_category_by_ID($cat);
-$agrCategory = array('category' => $cat, 'posts_per_page' => -1,
-    'numberposts' => -1);
-$postsCategory = get_posts($agrCategory);
+
+$args = array('post_type' => 'news', 'posts_per_page' => -1);
+$loop = new WP_Query($args);
 
 ?>
 <div class="container-fluid container-responsive" id="news-list">
     <div class="container">
-        <?php foreach ($postsCategory as $k => $post) {
-            setup_postdata($post);
+        <?php
+        while ($loop->have_posts()) {
+            $loop->the_post();
             $thumb_id = get_post_thumbnail_id();
             $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-            $thumb_url = $thumb_url_array[0]; ?>
+            $thumb_url = $thumb_url_array[0];
+            ?>
             <div class="item col-xs-12">
                 <div class="item-left col-xs-12 col-sm-12 col-md-4">
                     <a href="#">
