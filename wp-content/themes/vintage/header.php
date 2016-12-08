@@ -38,7 +38,7 @@
             $menuName = $lang == 'vi' ? 'vintage-vi' : 'Vintage';
             $menuItems = wp_get_nav_menu_items($menuName, array('order' => 'DESC')); ?>
             <ul class="main-menu list-inline no-margin">
-                <li class="item"><a href="<?= get_home_url() ?>">TRANG CHỦ</a></li>
+                <li class="item"><a href="<?= get_home_url() ?>"><?php echo ($lang == 'vi' ? 'TRANG CHỦ' :'HOMGEPAGE'); ?></a></li>
                 <?php
                 $count = 0;
                 $submenu = false;
