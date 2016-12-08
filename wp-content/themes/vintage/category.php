@@ -12,7 +12,7 @@ get_header(); ?>
 		<?php
 		for ($i = 1; $i <= 6; $i++) {
 		?>
-			<div class="col-sm-6">
+			<div class="col-sm-12 col-md-6">
 				<div class="item-inner">
 					<div class="pic"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/NequeV.png"></div>
 					<div class="info">
