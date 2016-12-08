@@ -13,7 +13,7 @@ get_header(); ?>
         <?php
         $listCategoryOfPost = get_the_category();
         foreach ($listCategoryOfPost as $categoryOfPost) {
-            $agrCategory = array('category' => $categoryOfPost->cat_ID);
+            $agrCategory = array('category' => $categoryOfPost->cat_ID, 'posts_per_page' => -1, 'numberposts' => -1);
             $postsCategory = get_posts($agrCategory);
             foreach ($postsCategory as $post) {
                 setup_postdata($post);
@@ -24,7 +24,11 @@ get_header(); ?>
                     <div class="item-inner">
                         <div class="pic"><img src="<?php echo $thumb_url; ?>"></div>
                         <div class="info">
-                            <div class="title"><a href="#"><?php the_title() ?></a></div>
+                            <div class="title">
+                                <a href="<?php echo esc_url(get_permalink()); ?>">
+                                    <?php the_title() ?>
+                                </a>
+                            </div>
                             <div class="description">
                                 <?php the_excerpt() ?>
                             </div>
@@ -35,7 +39,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-            <?php
+                <?php
             }
         } ?>
     </div>
