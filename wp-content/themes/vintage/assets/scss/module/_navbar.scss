@@ -15,9 +15,13 @@ nav {
     img {
       height: 90px;
       @extend .animate-ease-out;
+    }
 
-      @media (max-width: 855px) {
-        height: 44px;
+    @media (min-width: 767px) and (max-width: 991px) {
+      padding: 0 10px;
+
+      img {
+        height: 65px;
       }
     }
   }
@@ -41,12 +45,6 @@ nav {
         text-transform: uppercase;
         letter-spacing: 1px;
 
-        @media (min-width: 767px) and (max-width: 887px) {
-          padding: 0 10px;
-          font-size: 14px;
-          letter-spacing: normal;
-        }
-
         &:hover {
           > a {
             opacity: 0.5;
@@ -61,6 +59,15 @@ nav {
 
         > .fa {
           margin-left: 5px;
+        }
+
+        @media (min-width: 767px) and (max-width: 991px) {
+          padding: 0 10px;
+          letter-spacing: normal;
+
+          > a {
+            font-size: 13px;
+          }
         }
       }
 

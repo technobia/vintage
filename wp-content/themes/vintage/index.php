@@ -10,8 +10,9 @@
                         <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-2.jpg"></a></li>
                         <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-3.jpg"></a></li>
                         <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-4.jpg"></a></li>
-                        <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-5.jpg"></a></li>
                         <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-6.jpg"></a></li>
+                        <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-sovex-grandschateaux.jpg"></a></li>
+                        <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-travaglini-gattinara.jpg"></a></li>
                     </ul>
                 </div>
             </div>
