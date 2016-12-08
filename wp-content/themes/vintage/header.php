@@ -69,8 +69,10 @@
 
                     <?php if ($parent_id == $item->menu_item_parent) { ?>
 
-                    <?php if (!$submenu) {
-                        $submenu = true; ?>
+                    <?php
+                        if (!$submenu) {
+                            $submenu = true;
+                    ?>
                         <ul class="list-unstyled dropdown-menu no-margin">
                     <?php } ?>
                     <li><a href="<?php echo $link; ?>"><i class="fa fa-angle-right"></i><?php echo $title; ?></a></li>
