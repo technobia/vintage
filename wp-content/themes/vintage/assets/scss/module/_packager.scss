@@ -2,6 +2,27 @@
   .item {
     margin: 15px 0;
 
+    &-inner {
+      background: url('../../assets/img/product-bg.jpg');
+      background-size: cover;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        @extend .animate-ease-out;
+      }
+
+      &:hover:after {
+        background: rgba(white, 0.1);
+      }
+    }
+
     img {
       width: 100%;
       border: 5px solid darken($primary, 20%);
