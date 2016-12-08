@@ -24,7 +24,7 @@ get_header(); ?>
                     <div class="item-inner">
                         <div class="pic"><img src="<?php echo $thumb_url; ?>"></div>
                         <div class="info">
-                            <div class="title"><?php the_title() ?></div>
+                            <div class="title"><a href="#"><?php the_title() ?></a></div>
                             <div class="description">
                                 <?php the_excerpt() ?>
                             </div>
