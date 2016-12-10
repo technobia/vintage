@@ -1,4 +1,9 @@
 #packager {
+  .item-inner {
+    height: 200px;
+    border: 5px solid darken($primary, 20%);
+  }
+
   .item {
     margin: 15px 0;
 
@@ -25,7 +30,8 @@
 
     img {
       width: 100%;
-      border: 5px solid darken($primary, 20%);
+      height: 100%;
+      object-fit: contain;
     }
   }
 
