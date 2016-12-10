@@ -42,8 +42,7 @@ get_header(); ?>
                                 <?php the_excerpt() ?>
                             </div>
                             <div class="price">
-                                <?php echo get_post_meta(get_the_ID(), 'price', TRUE);;
-                                ?>
+                                <?=get_post_meta(get_the_ID(), 'price', TRUE)?>
                             </div>
                         </div>
                     </div>
