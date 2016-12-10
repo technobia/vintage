@@ -7,3 +7,22 @@ body {
   background-size: cover;
   overflow: hidden;
 }
+
+.breadcrumb {
+  background: $primary url('../../assets/img/bkg_stripe.png');
+  color: white;
+
+  span {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  .list-inline {
+    margin-bottom: 3px;
+
+    li {
+      cursor: default;
+    }
+  }
+}

@@ -10,6 +10,15 @@ get_header(); ?>
 
 <div id="product-list" class="container-responsive">
     <div class="container">
+        <div class="col-xs-12">
+            <div class="breadcrumb no-margin">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><span>SẢN PHẨM</span></li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li><span>CASA PETROLINAS</span></li>
+                </ul>
+            </div>
+        </div>
         <?php
         $listCategoryOfPost = get_the_category();
         foreach ($listCategoryOfPost as $categoryOfPost) {

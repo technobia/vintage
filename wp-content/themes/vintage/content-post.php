@@ -1,36 +1,29 @@
+<?php
+$currentPostId = get_the_ID();
+$currentContent = get_the_content();
+$thumb_id = get_post_thumbnail_id();
+$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+$thumb_url = $thumb_url_array[0];
+$listCategoryOfPost = get_the_category();
+?>
 <div id="product-detail" class="container-responsive">
+    <div class="product-detail-inner">
+        <div class="col-xs-12 no-padding">
+            <div class="breadcrumb no-margin">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><span>SẢN PHẨM</span></li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li><span>CASA PETROLINAS</span></li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li><span><?=the_title()?></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="product-detail-inner">
         <div class="product-detail">
             <h1 class="title"><?php the_title() ?></h1>
-            <ul class="list-inline no-margin list-child">
-                <?php
-                $currentPostId = get_the_ID();
-                $currentContent = get_the_content();
-                $thumb_id = get_post_thumbnail_id();
-                $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-                $thumb_url = $thumb_url_array[0];
-
-
-                $listCategoryOfPost = get_the_category();
-                foreach ($listCategoryOfPost as $categoryOfPost) {
-                    $agrCategory = array('category' => $categoryOfPost->cat_ID, 'posts_per_page' => -1,
-                        'numberposts' => -1);
-                    $postsCategory = get_posts($agrCategory);
-
-                    foreach ($postsCategory as $post) {
-                        setup_postdata($post);
-                        if ($post->ID == $currentPostId) {
-                            ?>
-                            <li class="active"><a
-                                    href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a></li>
-                        <?php } else {
-                            ?>
-                            <li><a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a></li>
-                        <?php }
-                    }
-                }
-                ?>
-            </ul>
             <div class="clearfix"></div>
             <div class="content">
                 <div class="description">
