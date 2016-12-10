@@ -19,6 +19,7 @@ $listCategoryOfPost = get_the_category();
                 </ul>
             </div>
         </div>
+        <div class="clearfix"></div>
     </div>
 
     <div class="product-detail-inner">
