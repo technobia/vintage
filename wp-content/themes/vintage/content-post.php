@@ -13,7 +13,7 @@ $listCategoryOfPost = get_the_category();
                 <ul class="list-inline">
                     <li class="list-inline-item"><span>SẢN PHẨM</span></li>
                     <li><i class="fa fa-angle-right"></i></li>
-                    <li><span>CASA PETROLINAS</span></li>
+                    <li><span><?=$listCategoryOfPost[0]->name?></span></li>
                     <li><i class="fa fa-angle-right"></i></li>
                     <li><span><?=the_title()?></span></li>
                 </ul>

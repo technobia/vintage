@@ -20,6 +20,8 @@ body {
 
   .list-inline {
     margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
 
     li {
       cursor: default;
