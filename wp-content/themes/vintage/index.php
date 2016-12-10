@@ -23,25 +23,28 @@
                 <div class="slideMain">
                     <ul class="no-margin slide1">
                         <li>
-                            <a href="<?=$casaspatronales?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-casas-patronales.jpg"></a>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-casas-patronales.jpg"></a>
                         </li>
                         <li>
-                            <a href="<?=$felixsolis?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-felix-solis.jpg"></a>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-felix-solis.jpg"></a>
                         </li>
                         <li>
-                            <a href="<?=$pasofino?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-paso-fino.jpg"></a>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-paso-fino.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-producta.jpg"></a>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-producta-vignobles.jpg"></a>
                         </li>
                         <li>
                             <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-san-marco.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-sovex-grandschateaux.jpg"></a>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-san-marco-reverva-especial.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-travaglini-gattinara.jpg"></a>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-sovex-grands-chateaux.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-travaglini.jpg"></a>
                         </li>
                     </ul>
                 </div>
