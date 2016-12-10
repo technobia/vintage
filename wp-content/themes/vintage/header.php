@@ -38,6 +38,10 @@
             $menuName = $lang == 'vi' ? 'vintage-vi' : 'Vintage';
             $menuItems = wp_get_nav_menu_items($menuName, array('order' => 'DESC')); ?>
             <ul class="main-menu list-inline no-margin">
+                <li class="item social-list">
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square"></i></a>
+                </li>
                 <li class="item"><a href="<?= get_home_url() ?>"><?php echo ($lang == 'vi' ? 'TRANG CHỦ' :'HOMGEPAGE'); ?></a></li>
                 <?php
                 $count = 0;

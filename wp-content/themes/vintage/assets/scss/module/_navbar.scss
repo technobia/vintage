@@ -71,6 +71,20 @@ nav {
         }
       }
 
+      .social-list {
+        padding: 0;
+
+        a {
+          margin: 0 2px;
+          font-size: 18px;
+          opacity: 1 !important;
+
+          &:hover {
+            color: lighten($primary, 30%);
+          }
+        }
+      }
+
       .divine {
         height: 22px;
         border-right: 1px solid rgba(255, 255, 255, .2);
