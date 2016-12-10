@@ -15,14 +15,20 @@ get_header(); ?>
                 <ul class="list-inline">
                     <li class="list-inline-item"><span>SẢN PHẨM</span></li>
                     <li><i class="fa fa-angle-right"></i></li>
-                    <li><span><?=$listCategoryOfPost[0]->name?></span></li>
+                    <li><span><?= $listCategoryOfPost[0]->name ?></span></li>
                 </ul>
             </div>
         </div>
         <div class="clearfix"></div>
         <?php
         foreach ($listCategoryOfPost as $categoryOfPost) {
-            $agrCategory = array('category' => $categoryOfPost->cat_ID, 'posts_per_page' => -1, 'numberposts' => -1);
+            $agrCategory = array(
+                'category' => $categoryOfPost->cat_ID,
+                'posts_per_page' => -1,
+                'meta_key' => 'price',
+                'orderby' => 'meta_value_num',
+                'order' => 'ASC',
+            );
             $postsCategory = get_posts($agrCategory);
             foreach ($postsCategory as $post) {
                 setup_postdata($post);
@@ -42,7 +48,7 @@ get_header(); ?>
                                 <?php the_excerpt() ?>
                             </div>
                             <div class="price">
-                                <?=get_post_meta(get_the_ID(), 'price', TRUE)?>
+                                <?= get_post_meta(get_the_ID(), 'currency', TRUE).get_post_meta(get_the_ID(), 'price', TRUE) ?>
                             </div>
                         </div>
                     </div>
