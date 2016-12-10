@@ -24,7 +24,7 @@ $loop = new WP_Query($args);
                     echo '<img src="' . $thumb_url . '"/>';
                     echo '<div class="info">';
                         echo '<h5>HỘP GIẤY ĐÔI CAO CẤP + TÚI</h5>';
-                        echo '<div class="price">85.000vnd/hộp</div>';
+                        echo '<div class="price">Vui lòng gọi</div>';
                     echo '</div>';
                 echo '</div>';
             echo '</div>';
