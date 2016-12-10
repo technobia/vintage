@@ -6,6 +6,10 @@
  * Time: 4:36 PM
  */
 $listCategoryOfPost = get_the_category();
+$categoryDetails = get_category($cat, array());
+$categoryLink = get_category_link($categoryDetails);
+$lang = get_bloginfo("language");
+
 get_header(); ?>
 
 <div id="product-list" class="container-responsive">
@@ -15,46 +19,44 @@ get_header(); ?>
                 <ul class="list-inline">
                     <li class="list-inline-item"><span>SẢN PHẨM</span></li>
                     <li><i class="fa fa-angle-right"></i></li>
-                    <li><span><?= $listCategoryOfPost[0]->name ?></span></li>
+                    <li><span><?= $categoryDetails->name ?></span></li>
                 </ul>
             </div>
         </div>
         <div class="clearfix"></div>
         <?php
-        foreach ($listCategoryOfPost as $categoryOfPost) {
-            $agrCategory = array(
-                'category' => $categoryOfPost->cat_ID,
-                'posts_per_page' => -1,
-                'meta_key' => 'price',
-                'orderby' => 'meta_value_num',
-                'order' => 'ASC',
-            );
-            $postsCategory = get_posts($agrCategory);
-            foreach ($postsCategory as $post) {
-                setup_postdata($post);
-                $thumb_id = get_post_thumbnail_id();
-                $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-                $thumb_url = $thumb_url_array[0]; ?>
-                <div class="col-sm-12 col-md-6">
-                    <div class="item-inner">
-                        <div class="pic"><img src="<?php echo $thumb_url; ?>"></div>
-                        <div class="info">
-                            <div class="title">
-                                <a href="<?php echo esc_url(get_permalink()); ?>">
-                                    <?php the_title() ?>
-                                </a>
-                            </div>
-                            <div class="description">
-                                <?php the_excerpt() ?>
-                            </div>
-                            <div class="price">
-                                <?= get_post_meta(get_the_ID(), 'currency', TRUE).get_post_meta(get_the_ID(), 'price', TRUE) ?>
-                            </div>
+        $agrCategory = array(
+            'category' => $cat,
+            'posts_per_page' => -1,
+            'meta_key' => 'price',
+            'orderby' => 'meta_value_num',
+            'order' => 'ASC',
+        );
+        $postsCategory = get_posts($agrCategory);
+        foreach ($postsCategory as $post) {
+            setup_postdata($post);
+            $thumb_id = get_post_thumbnail_id();
+            $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+            $thumb_url = $thumb_url_array[0]; ?>
+            <div class="col-sm-12 col-md-6">
+                <div class="item-inner">
+                    <div class="pic"><img src="<?php echo $thumb_url; ?>"></div>
+                    <div class="info">
+                        <div class="title">
+                            <a href="<?php echo esc_url(get_permalink()); ?>">
+                                <?php the_title() ?>
+                            </a>
+                        </div>
+                        <div class="description">
+                            <?php the_excerpt() ?>
+                        </div>
+                        <div class="price">
+                            <?= get_post_meta(get_the_ID(), 'currency', TRUE) . get_post_meta(get_the_ID(), 'price', TRUE) ?>
                         </div>
                     </div>
                 </div>
-                <?php
-            }
+            </div>
+            <?php
         } ?>
     </div>
 </div>
