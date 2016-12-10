@@ -23,7 +23,7 @@ $loop = new WP_Query($args);
                 echo '<div class="item-inner">';
                     echo '<img src="' . $thumb_url . '"/>';
                     echo '<div class="info">';
-                        echo '<h5>HỘP GIẤY ĐÔI CAO CẤP + TÚI</h5>';
+                        echo '<h5>'.get_the_title().'</h5>';
                         echo '<div class="price">Vui lòng gọi</div>';
                     echo '</div>';
                 echo '</div>';
