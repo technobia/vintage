@@ -51,7 +51,11 @@ get_header(); ?>
                             <?php the_excerpt() ?>
                         </div>
                         <div class="price">
-                            <?=get_post_meta(get_the_ID(), 'price', TRUE).' '.get_post_meta(get_the_ID(), 'currency', TRUE)?>
+                            <?php
+                            $number = number_format(get_post_meta(get_the_ID(), 'price', TRUE));
+                            $currency = get_post_meta(get_the_ID(), 'currency', TRUE);
+                            echo $number.' '.$currency;
+                            ?>
                         </div>
                     </div>
                 </div>
