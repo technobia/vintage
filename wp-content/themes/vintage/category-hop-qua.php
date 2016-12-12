@@ -22,12 +22,16 @@ $loop = new WP_Query($args);
             $thumb_id = get_post_thumbnail_id();
             $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
             $thumb_url = $thumb_url_array[0];
+
+            $number = number_format(get_post_meta(get_the_ID(), 'price', TRUE));
+            $currency = get_post_meta(get_the_ID(), 'currency', TRUE);
+
             echo '<div class="item col-xs-12 col-sm-6 col-md-4">';
             echo '<div class="item-inner">';
             echo '<img src="' . $thumb_url . '"/>';
             echo '<div class="info">';
             echo '<h5>' . get_the_title() . '</h5>';
-            echo '<div class="price">' . get_post_meta(get_the_ID(), 'currency', TRUE) . get_post_meta(get_the_ID(), 'price', TRUE) . '</div>';
+            echo '<div class="price">'.$number.' '.$currency.'</div>';
             echo '</div>';
             echo '</div>';
             echo '</div>';
