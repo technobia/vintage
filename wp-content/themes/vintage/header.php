@@ -38,10 +38,6 @@
             $menuName = $lang == 'vi' ? 'vintage-vi' : 'Vintage';
             $menuItems = wp_get_nav_menu_items($menuName, array('order' => 'DESC')); ?>
             <ul class="main-menu list-inline no-margin">
-                <li class="item social-list">
-                    <a href="#"><i class="fa fa-facebook-square"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square"></i></a>
-                </li>
                 <li class="item"><a href="<?= get_home_url() ?>"><?php echo ($lang == 'vi' ? 'TRANG CHỦ' :'HOMGEPAGE'); ?></a></li>
                 <?php
                 $count = 0;
@@ -100,6 +96,10 @@
                             src="<?php bloginfo('template_url'); ?>/assets/img/flag-vn.jpg"></a>
                     <a href="<?php echo get_site_url() . "/en"?>"><img
                             src="<?php bloginfo('template_url'); ?>/assets/img/flag-us.jpg"></a>
+                </li>
+                <li class="item social-list">
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square"></i></a>
                 </li>
                 <!--<ul id="flags">
                     <?php /*pll_the_languages(array('show_flags' => 1, 'show_names' => 0)); */ ?>
