@@ -7,7 +7,11 @@
  */
 get_header();
 
-$args = array('post_type' => 'gift_box', 'posts_per_page' => -1);
+$args = array('post_type' => 'gift_box',
+    'posts_per_page' => -1,
+    'meta_key' => 'price',
+    'orderby' => 'meta_value_num',
+    'order' => 'ASC',);
 $loop = new WP_Query($args);
 
 ?>
