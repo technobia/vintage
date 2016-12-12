@@ -7,7 +7,7 @@ $thumb_url = $thumb_url_array[0];
 $listCategoryOfPost = get_the_category();
 ?>
 <div id="product-detail" class="container-responsive">
-    <div class="product-detail-inner">
+    <div class="product-detail-inner" style="padding-bottom: 0;">
         <div class="col-xs-12 no-padding">
             <div class="breadcrumb no-margin">
                 <ul class="list-inline">

@@ -11,6 +11,16 @@ body {
 .breadcrumb {
   background: $primary url('../../assets/img/bkg_stripe.png');
   color: white;
+  display: flex;
+  align-items: center;
+
+  .thumb {
+    width: 100%;
+
+    img {
+      height: 50px;
+    }
+  }
 
   span {
     font-weight: 700;
@@ -22,6 +32,7 @@ body {
     margin-bottom: 3px;
     white-space: nowrap;
     overflow: hidden;
+    flex-shrink: 0;
 
     li {
       cursor: default;
