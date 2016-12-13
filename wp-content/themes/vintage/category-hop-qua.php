@@ -28,7 +28,7 @@ $loop = new WP_Query($args);
             $number = $number == '999,999,999' ? '' : $number;
             echo '<div class="item col-xs-12 col-sm-6 col-md-4">';
             echo '<div class="item-inner">';
-            echo '<img src="' . $thumb_url . '"/>';
+            echo '<img src="' . $thumb_url . '" data-action="zoom"/>';
             echo '<div class="info">';
             echo '<h5>' . get_the_title() . '</h5>';
             echo '<div class="price">' . $number . ' ' . $currency . '</div>';
