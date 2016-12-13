@@ -31,7 +31,7 @@ $listCategoryOfPost = get_the_category();
                     <?php echo $currentContent; ?>
                 </div>
                 <div class="image">
-                    <img src="<?php echo $thumb_url; ?>">
+                    <img src="<?php echo $thumb_url; ?>" data-action="zoom">
                 </div>
             </div>
 
