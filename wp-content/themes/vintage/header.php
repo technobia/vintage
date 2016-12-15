@@ -15,6 +15,7 @@
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/bootstrap.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.rotate.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/zoomjs/zoom.js"></script>
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/elevatezoom/jquery.elevatezoom.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/custom.js"></script>
 </head>
 <body>
