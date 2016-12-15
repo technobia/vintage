@@ -79,7 +79,7 @@ get_header(); ?>
                         <div class="description">
                             <?php the_excerpt() ?>
                         </div>
-                        <div class="price">
+                        <div class="price hidden">
                             <?php
                             $number = number_format(get_post_meta(get_the_ID(), 'price', TRUE));
                             $currency = get_post_meta(get_the_ID(), 'currency', TRUE);
