@@ -1,6 +1,7 @@
 $(document).ready(function(){
     initBrandSlider();
-    initElevateZoom();
+    initPrettyPhoto();
+    initMagnifyZoomImage();
 });
 
 function initBrandSlider(width) {
@@ -30,5 +31,24 @@ function initElevateZoom() {
         zoomWindowPosition: 11,
         zoomWindowWidth: 300,
         zoomWindowHeight: 360
+    });
+}
+
+function initPrettyPhoto() {
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+        social_tools: ''
+    });
+}
+
+function initMagnifyZoomImage() {
+    var evt = new Event(),
+        m = new Magnifier(evt);
+
+    m.attach({
+        thumb: '#thumb',
+        largeWrapper: 'preview',
+        mode: 'inside',
+        zoom: 2,
+        zoomable: true
     });
 }

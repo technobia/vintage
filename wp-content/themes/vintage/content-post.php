@@ -30,10 +30,12 @@ $listCategoryOfPost = get_the_category();
 	                <?php echo $currentContent; ?>
                 </div>
                 <div class="image">
-                    <img data-action="elevatezoom"
-                         src="<?php echo $thumb_url; ?>"
-                         data-zoom-image="<?php echo $thumb_url; ?>"
-                         class="original">
+                    <div class="image-inner">
+                        <a href="<?php echo $thumb_url; ?>" rel="prettyPhoto" class="magnifier-thumb-wrapper">
+                            <img src="<?php echo $thumb_url; ?>" id="thumb" class="original zoom">
+                        </a>
+                        <div class="magnifier-preview" id="preview"></div>
+                    </div>
                 </div>
             </div>
         </div>

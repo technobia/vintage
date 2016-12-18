@@ -11,11 +11,15 @@
     <title>Tutorial theme</title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico"/>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.min.js"></script>
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.min.1.9.1.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/bootstrap.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.rotate.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/zoomjs/zoom.js"></script>
-	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/elevatezoom/jquery.elevatezoom.js"></script>
+
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/magnify-master/Event.js"></script>
+	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/magnify-master/Magnifier.js"></script>
+
+    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/custom.js"></script>
 </head>
 <body>

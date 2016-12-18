@@ -7,4 +7,6 @@ $border-radius-base: 0 !default;
 
 @import "module/all";
 @import "responsive/all";
-@import "../../vendor/elevatezoom/elevatezoom";
+@import "../../vendor/magnify-master/magnifier.css";
+@import "../../vendor/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css";
+@import "custom";

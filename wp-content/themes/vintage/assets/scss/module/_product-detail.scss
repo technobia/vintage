@@ -63,7 +63,9 @@
 
     .image {
       width: 50%;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      position: relative;
 
       img.original {
         max-width: 100%;
