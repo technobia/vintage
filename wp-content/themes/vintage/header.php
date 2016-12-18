@@ -14,7 +14,6 @@
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.min.1.9.1.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/bootstrap.min.js"></script>
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/scripts/jquery.rotate.min.js"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/zoomjs/zoom.js"></script>
 
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/magnify-master/Event.js"></script>
 	<script src="<?php echo esc_url(get_template_directory_uri()); ?>/vendor/magnify-master/Magnifier.js"></script>
