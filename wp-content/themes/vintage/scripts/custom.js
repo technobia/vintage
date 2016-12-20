@@ -41,6 +41,8 @@ function initPrettyPhoto() {
 }
 
 function initMagnifyZoomImage() {
+    if (!$('#thumb').length) return;
+
     var evt = new Event(),
         m = new Magnifier(evt);
 
