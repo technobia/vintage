@@ -74,7 +74,7 @@ get_header(); ?>
             ?>
             <div class="col-sm-12 col-md-6">
                 <div class="item-inner">
-                    <div class="pic"><img src="<?php echo $thumb_url; ?>" class="<?=$no_rotate_class?>"></div>
+                    <div class="pic"><img src="<?=$thumb_url?>" class="<?=$no_rotate_class?>"></div>
                     <div class="info">
                         <div class="title">
                             <a href="<?php echo esc_url(get_permalink()); ?>">
