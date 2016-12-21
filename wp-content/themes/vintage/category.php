@@ -62,7 +62,7 @@ get_header(); ?>
             'order' => 'ASC',
         );
         $postsCategory = get_posts($agrCategory);
-        $no_rotate = [285, 248, 288];
+        $no_rotate = [285, 248, 288, 320, 316, 313, 309, 305];
 
         foreach ($postsCategory as $post) {
             setup_postdata($post);
