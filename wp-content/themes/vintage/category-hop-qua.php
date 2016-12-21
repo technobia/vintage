@@ -31,10 +31,10 @@ $loop = new WP_Query($args);
                 echo '<a href="'.$thumb_url.'" rel="prettyPhoto[gift]">';
                     echo '<img src="'.$thumb_url.'"/>';
                 echo '</a>';
-            echo '<div class="info">';
-            echo '<h5>' . get_the_title() . '</h5>';
-            echo '<div class="price">' . $number . ' ' . $currency . '</div>';
-            echo '</div>';
+//            echo '<div class="info">';
+//            echo '<h5>' . get_the_title() . '</h5>';
+//            echo '<div class="price">' . $number . ' ' . $currency . '</div>';
+//            echo '</div>';
             echo '</div>';
             echo '</div>';
         endwhile; ?>
