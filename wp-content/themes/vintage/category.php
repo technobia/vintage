@@ -37,6 +37,12 @@ switch($categoryDetails->cat_ID) {
         break;
 };
 
+$is_casas_patronal_page = $cat == 44;
+$casas_patronal_page_one = [75, 79, 152, 157, 160, 169, 173, 179];
+$casas_patronal_page_two = [341, 344, 183, 349, 352, 357, 361];
+$casas_patronal_page_three = [364, 368, 374, 377, 381, 385, 389];
+
+
 get_header(); ?>
 
 <div id="product-list" class="container-responsive">
@@ -53,6 +59,17 @@ get_header(); ?>
             </div>
         </div>
         <div class="clearfix"></div>
+
+        <?php if ($is_casas_patronal_page) { ?>
+
+        <div class="col-sm-12 col-md-6">
+            <?php
+            require('category-casa-patronal.content.php');
+            ?>
+        </div>
+
+        <?php } else { ?>
+
         <?php
         $agrCategory = array(
             'category' => $cat,
@@ -96,6 +113,8 @@ get_header(); ?>
             </div>
             <?php
         } ?>
+
+        <?php } ?>
     </div>
 </div>
 <?php get_footer(); ?>
