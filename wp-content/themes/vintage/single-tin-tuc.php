@@ -2,9 +2,10 @@
 /**
  * Created by PhpStorm.
  * User: kanguyen
- * Date: 11/24/16
- * Time: 11:18 AM
+ * Date: 12/22/16
+ * Time: 09:57
  */
+
 get_header();
 
 
@@ -23,7 +24,7 @@ $listCategoryOfPost = get_the_category();
                 <div class="content">
                     <div class="description">
                         <h1 class="title"><?=the_title() ?></h1>
-                            <?=the_content(); ?>
+                        <?=the_content(); ?>
                     </div>
                     <div class="image">
                         <div class="image-inner">

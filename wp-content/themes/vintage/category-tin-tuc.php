@@ -28,7 +28,7 @@ $loop = new WP_Query($args);
                     </a>
                 </div>
                 <div class="item-body col-xs-12 col-sm-12 col-md-8">
-                    <h4 class="item-heading"><a href="#"><?php the_title(); ?></a></h4>
+                    <h4 class="item-heading"><a href="<?php echo esc_url(get_permalink())?>"><?php the_title(); ?></a></h4>
                     <?php the_content(); ?>
                 </div>
             </div>
