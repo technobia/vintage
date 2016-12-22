@@ -38,10 +38,6 @@ switch($categoryDetails->cat_ID) {
 };
 
 $is_casas_patronal_page = $cat == 44;
-$casas_patronal_page_one = [75, 79, 152, 157, 160, 169, 173, 179];
-$casas_patronal_page_two = [341, 344, 183, 349, 352, 357, 361];
-$casas_patronal_page_three = [364, 368, 374, 377, 381, 385, 389];
-
 
 get_header(); ?>
 
@@ -60,61 +56,12 @@ get_header(); ?>
         </div>
         <div class="clearfix"></div>
 
-        <?php if ($is_casas_patronal_page) { ?>
-
-        <div class="col-sm-12 col-md-6">
-            <?php
-            require('category-casa-patronal.content.php');
-            ?>
-        </div>
-
-        <?php } else { ?>
-
         <?php
-        $agrCategory = array(
-            'category' => $cat,
-            'posts_per_page' => -1,
-            'meta_key' => 'price',
-            'orderby' => 'meta_value_num',
-            'order' => 'ASC',
-        );
-        $postsCategory = get_posts($agrCategory);
-        $no_rotate = [285, 248, 288, 320, 316, 313, 309, 305];
-
-        foreach ($postsCategory as $post) {
-            setup_postdata($post);
-            $thumb_id = get_post_thumbnail_id();
-            $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-            $thumb_url = $thumb_url_array[0];
-            $no_rotate_class = '';
-            if (in_array($post->ID, $no_rotate)) { $no_rotate_class = 'no-rotate'; }
-            ?>
-            <div class="col-sm-12 col-md-6">
-                <div class="item-inner">
-                    <div class="pic"><img src="<?=$thumb_url?>" class="<?=$no_rotate_class?>"></div>
-                    <div class="info">
-                        <div class="title">
-                            <a href="<?php echo esc_url(get_permalink()); ?>">
-                                <?php the_title() ?>
-                            </a>
-                        </div>
-                        <div class="description">
-                            <?php the_excerpt() ?>
-                        </div>
-                        <div class="price hidden">
-                            <?php
-                            $number = number_format(get_post_meta(get_the_ID(), 'price', TRUE));
-                            $currency = get_post_meta(get_the_ID(), 'currency', TRUE);
-                            echo $number.' '.$currency;
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php
+        if ($is_casas_patronal_page) {
+            require('category-casa-patronal.content.php');
+        } else {
+            require('category.content.php');
         } ?>
-
-        <?php } ?>
     </div>
 </div>
 <?php get_footer(); ?>

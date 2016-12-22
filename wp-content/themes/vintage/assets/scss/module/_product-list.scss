@@ -78,4 +78,23 @@
       }
     }
   }
+
+  .pagination {
+    > li > a,
+    > li > span {
+      background: transparent;
+      color: white;
+      border-color: rgba(white, 0.5);
+    }
+
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus,
+    > .active > span,
+    > .active > span:hover,
+    > .active > span:focus {
+      background: rgba($primary, 0.5);
+      border-color: $primary;
+    }
+  }
 }
