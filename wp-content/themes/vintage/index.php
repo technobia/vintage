@@ -8,13 +8,16 @@
         $list = wp_get_nav_menu_items($menuName, array('order' => 'DESC'));
         $result = array();
         foreach ($list as $item) {
-            $result[$item->ID] = $item->url;
+            $result[$item->object_id] = $item->url;
         }
-//        echo "<pre>";
-//        print_r($result);
-//        echo "</pre>";
-        $casaspatronales = $isVietnam ? $result[68] : $result[37];
-        $felixsolis = $isVietnam ? $result[69] : $result[43];
+
+        $casaspatronales = $isVietnam ? $result[44] : $result[15];
+        $felixsolis = $isVietnam ? $result[56] : $result[17];
+        $travalini = $isVietnam ? $result[54] : $result[19];
+        $producta = $isVietnam ? $result[50] : $result[27];
+        $sovex = $isVietnam ? $result[52] : $result[31];
+        $sand_marco = $isVietnam ? $result[48] : $result[35];
+        $paso_fino = $isVietnam ? $result[46] : $result[39];
         ?>
     </div>
     <div id="footer">
@@ -23,28 +26,28 @@
                 <div class="slideMain">
                     <ul class="no-margin slide1">
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-1-casas-patronales.jpg"></a>
+                            <a href="<?=$casaspatronales?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-1-casas-patronales.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-2-felix-solis.jpg"></a>
+                            <a href="<?=$felixsolis?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-2-felix-solis.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-3-producta-vignobles.jpg"></a>
+                            <a href="<?=$travalini?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-4-travaglini.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-4-travaglini.jpg"></a>
+                            <a href="<?=$producta?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-3-producta-vignobles.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-5-sovex-grands-chateaux.jpg"></a>
+                            <a href="<?=$sovex?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-5-sovex-grands-chateaux.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-6-san-marco-gran-reserva.jpg"></a>
+                            <a href="<?=$sand_marco?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-6-san-marco-gran-reserva.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-7-san-marco-reverva-especial.jpg"></a>
+                            <a href="<?=$sand_marco?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-7-san-marco-reverva-especial.jpg"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-8-paso-fino.jpg"></a>
+                            <a href="<?=$paso_fino?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-8-paso-fino.jpg"></a>
                         </li>
                     </ul>
                 </div>
