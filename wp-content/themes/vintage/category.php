@@ -48,7 +48,7 @@ get_header(); ?>
                 <div class="thumb"><img
                         src="<?=bloginfo( 'template_url' ).$thumb?>"></div>
                 <ul class="list-inline">
-                    <li class="list-inline-item"><span>SẢN PHẨM</span></li>
+                    <li class="list-inline-item"><span><?=($lang == 'vi' ? 'SẢN PHẨM' :'PRODUCT')?></span></li>
                     <li><i class="fa fa-angle-right"></i></li>
                     <li><span><?= $categoryDetails->name ?></span></li>
                 </ul>
