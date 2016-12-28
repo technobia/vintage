@@ -21,7 +21,7 @@ function create_post_type()
                 'parent' => __('Parent Pictures'),
             ),
             'supports' => array('title', 'editor', 'author', 'thumbnail'),
-            'taxonomies' => array('category','post_tag'),
+            'taxonomies' => array('category', 'post_tag'),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'pictures'),
@@ -46,7 +46,7 @@ function create_post_type()
                 'parent' => __('Parent News'),
             ),
             'supports' => array('title', 'editor', 'author', 'thumbnail'),
-            'taxonomies' => array('category','post_tag'),
+            'taxonomies' => array('category', 'post_tag'),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'news'),
@@ -71,7 +71,7 @@ function create_post_type()
                 'parent' => __('Parent Gift Box'),
             ),
             'supports' => array('title', 'editor', 'author', 'thumbnail'),
-            'taxonomies' => array('category','post_tag'),
+            'taxonomies' => array('category', 'post_tag'),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'gift-box'),
@@ -82,6 +82,15 @@ function create_post_type()
 // Hooking up our function to theme setup
 add_action('init', 'create_post_type');
 
+add_action('pre_get_posts', function ($q) {
+
+    if (!is_admin() && $q->is_main_query() && $q->is_post_type_archive('news')) {
+
+        $q->set('posts_per_page', 5);
+
+    }
+
+});
 
 if (!function_exists('vintage_setup')) :
     /**
