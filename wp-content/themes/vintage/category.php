@@ -10,32 +10,22 @@ $categoryDetails = get_category($cat, array());
 $categoryLink = get_category_link($categoryDetails);
 $lang = get_bloginfo("language");
 
-switch($categoryDetails->cat_ID) {
-    case 44:
-        $thumb = '/assets/img/thumb-Casas-Patronales.png';
-        break;
-    case 46:
-        $thumb = '/assets/img/thumb-paso-fino-white.png';
-        break;
-    case 48:
-        $thumb = '/assets/img/thumb-san-marco-gran-reverva-white.png';
-        break;
-    case 50:
-        $thumb = '/assets/img/thumb-producta-vignobles-white.png';
-        break;
-    case 52:
-        $thumb = '/assets/img/thumb-sovex-grands-chateaux-white.png';
-        break;
-    case 54:
-        $thumb = '/assets/img/thumb-travaglini-white.png';
-        break;
-    case 56:
-        $thumb = '/assets/img/thumb-felix-solis-white.png';
-        break;
-    default:
-        $thumb = '/assets/img/thumb-Casas-Patronales-white.png';
-        break;
-};
+$cate_id = $categoryDetails->cat_ID;
+if ($cate_id == 44 || $cate_id == 15) {
+    $thumb = '/assets/img/thumb-Casas-Patronales.png';
+} elseif ($cate_id == 46 || $cate_id == 39) {
+    $thumb = '/assets/img/thumb-paso-fino-white.png';
+} elseif ($cate_id == 48 || $cate_id == 35) {
+    $thumb = '/assets/img/thumb-san-marco-gran-reverva-white.png';
+} elseif ($cate_id == 50 || $cate_id == 27) {
+    $thumb = '/assets/img/thumb-producta-vignobles-white.png';
+} elseif ($cate_id == 52 || $cate_id == 31) {
+    $thumb = '/assets/img/thumb-sovex-grands-chateaux-white.png';
+} elseif ($cate_id == 54 || $cate_id == 19) {
+    $thumb = '/assets/img/thumb-travaglini-white.png';
+} elseif ($cate_id == 56 || $cate_id == 17) {
+    $thumb = '/assets/img/thumb-felix-solis-white.png';
+}
 
 $is_casas_patronal_page = $cat == 44;
 
