@@ -27,7 +27,7 @@ if ($cate_id == 44 || $cate_id == 15) {
     $thumb = '/assets/img/thumb-felix-solis-white.png';
 }
 
-$is_casas_patronal_page = $cat == 44;
+$is_casas_patronal_page = $cat == 44 || $cat == 15;
 
 get_header(); ?>
 
