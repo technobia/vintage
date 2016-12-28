@@ -18,6 +18,11 @@
     }
 
     &-body {
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      height: 195px;
+      overflow: hidden;
+
       h4 {
         margin: 0 0 15px 0;
 
