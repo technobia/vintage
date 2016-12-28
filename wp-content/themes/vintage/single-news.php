@@ -14,6 +14,7 @@ $thumb_id = get_post_thumbnail_id();
 $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 $thumb_url = $thumb_url_array[0];
 $listCategoryOfPost = get_the_category();
+$smallDescription = get_post_meta(get_the_ID(), 'small_description', true);
 ?>
 <div id="news-detail" class="container-responsive">
     <div class="product-detail-inner">
@@ -21,8 +22,9 @@ $listCategoryOfPost = get_the_category();
             the_post(); ?>
             <div class="product-detail">
                 <div class="description">
-                    <h1 class="title"><?=the_title() ?></h1>
-                    <?=the_content(); ?>
+                    <h1 class="title"><?= the_title() ?></h1>
+                    <?= the_content(); ?>
+                    <div><?= $smallDescription ?></div>
                 </div>
             </div>
         <?php } ?>
