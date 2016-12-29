@@ -48,9 +48,7 @@ function initMagnifyZoomImage() {
 
     m.attach({
         thumb: '#thumb',
-        largeWrapper: 'preview',
         mode: 'inside',
-        zoom: 2,
         zoomable: true
     });
 }

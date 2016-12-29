@@ -35,7 +35,6 @@ $lang = get_bloginfo("language");
                         <a href="<?php echo $thumb_url; ?>" rel="prettyPhoto" class="magnifier-thumb-wrapper">
                             <img src="<?php echo $thumb_url; ?>" id="thumb" class="original zoom">
                         </a>
-                        <div class="magnifier-preview" id="preview"></div>
                     </div>
                 </div>
             </div>
