@@ -17,7 +17,7 @@ function initBrandSlider(width) {
 function initPrettyPhoto() {
     $("a[rel^='prettyPhoto']").prettyPhoto({
         social_tools: '',
-        markup: '<div class="pp_pic_holder_wrapper" style="position: absolute; top:0;left:0;right:0;bottom:0;overflow-x:hidden;overflow-y: auto;z-index:1"><div class="pp_pic_holder"> \
+        markup: '<div class="pp_pic_holder_wrapper" style="position: absolute; top:0;left:0;right:0;bottom:0;overflow-x:hidden;overflow-y: auto;z-index:9999"><div class="pp_pic_holder"> \
 						<div class="ppt">&nbsp;</div> \
 						<div class="pp_top"> \
 							<div class="pp_left"></div> \
