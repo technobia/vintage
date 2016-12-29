@@ -20,7 +20,7 @@
     &-body {
       -webkit-line-clamp: 6;
       -webkit-box-orient: vertical;
-      height: 195px;
+      max-height: 195px;
       overflow: hidden;
 
       h4 {
