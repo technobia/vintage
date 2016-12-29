@@ -73,6 +73,10 @@ function initMagnifyZoomImage() {
     m.attach({
         thumb: '#thumb',
         mode: 'inside',
-        zoomable: true
+        zoomable: true,
+        onthumbleave: function() {
+            $('#thumb-lens').addClass('hidden');
+            $('#thumb').removeClass('opaque');
+        }
     });
 }
