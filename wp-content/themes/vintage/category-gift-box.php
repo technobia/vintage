@@ -26,16 +26,11 @@ $loop = new WP_Query($args);
             $number = number_format(get_post_meta(get_the_ID(), 'price', TRUE));
             $currency = get_post_meta(get_the_ID(), 'currency', TRUE);
             $number = $number == '999,999,999' ? '' : $number;
-
             echo '<div class="item col-xs-12 col-sm-6 col-md-4">';
             echo '<div class="item-inner">';
             echo '<a href="'.$thumb_url.'" rel="prettyPhoto[gift]">';
             echo '<img src="'.$thumb_url.'"/>';
             echo '</a>';
-            echo '<div class="info">';
-            echo '<h5>' . get_the_title() . '</h5>';
-            echo '<div class="price">' . $number . ' ' . $currency . '</div>';
-            echo '</div>';
             echo '</div>';
             echo '</div>';
         endwhile; ?>
