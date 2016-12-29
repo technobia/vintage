@@ -5,13 +5,14 @@ $thumb_id = get_post_thumbnail_id();
 $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 $thumb_url = $thumb_url_array[0];
 $listCategoryOfPost = get_the_category();
+$lang = get_bloginfo("language");
 ?>
 <div id="product-detail" class="container-responsive">
     <div class="product-detail-inner" style="padding-bottom: 0;">
         <div class="col-xs-12 no-padding">
             <div class="breadcrumb no-margin">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><span>SẢN PHẨM</span></li>
+                    <li class="list-inline-item"><span><?=($lang == 'vi' ? 'SẢN PHẨM' :'PRODUCTS')?></span></li>
                     <li><i class="fa fa-angle-right"></i></li>
                     <li><span><?=$listCategoryOfPost[0]->name?></span></li>
                     <li><i class="fa fa-angle-right"></i></li>
