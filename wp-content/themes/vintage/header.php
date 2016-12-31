@@ -103,7 +103,7 @@
                             src="<?php bloginfo('template_url'); ?>/assets/img/flag-us.jpg"></a>
                 </li>
                 <li class="item social-list">
-                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.facebook.com/Công-ty-Nhập-Khẩu-Phân-Phối-Rượu-Vang-Vintage-305633576499335/"><i class="fa fa-facebook-square"></i></a>
                     <a href="#"><i class="fa fa-twitter-square"></i></a>
                 </li>
             </ul>
