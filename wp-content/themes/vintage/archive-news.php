@@ -42,14 +42,17 @@ $loop = new WP_Query($args);
             </div>
         <?php } ?>
         <?php
-
-        $big = 999999999; // need an unlikely integer
-        echo paginate_links(array(
-            'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-            'format' => '?paged=%#%',
-            'current' => max(1, get_query_var('paged')),
-            'total' => $loop->max_num_pages
-        ));
+        echo '<div class="pagination">';
+            $big = 999999999; // need an unlikely integer
+            echo paginate_links(array(
+                'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+                'format' => '?paged=%#%',
+                'current' => max(1, get_query_var('paged')),
+                'total' => $loop->max_num_pages,
+                'prev_text' => __('<'),
+                'next_text' => __('>')
+            ));
+        echo '</div>';
         ?>
 
     </div>
