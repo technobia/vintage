@@ -42,6 +42,9 @@ body {
 }
 
 div.pp_overlay {
+  background: none;
+}
+
+div.pp_pic_holder_wrapper {
   background: transparent url(../../assets/img/bkg_stripe_brotherhood.png);
-  position: fixed;
 }
