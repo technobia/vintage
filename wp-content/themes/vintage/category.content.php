@@ -7,7 +7,7 @@ $agrCategory = array(
     'order' => 'ASC',
 );
 $postsCategory = get_posts($agrCategory);
-$no_rotate = [285, 248, 288, 320, 316, 313, 309, 305, 588, 661, '|', 605, 607, 603, 595, 593, 583, 580, 665];
+$no_rotate = array(285, 248, 288, 320, 316, 313, 309, 305, 588, 661, '|', 605, 607, 603, 595, 593, 583, 580, 665);
 
 foreach ($postsCategory as $post) {
     setup_postdata($post);
