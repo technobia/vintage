@@ -7,19 +7,13 @@
  */
 get_header();
 
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$args = array(
-    'post_type' => 'news',
-    'posts_per_page' => 5,
-    'paged' => $paged
-);
+$args = array('post_type' => 'news', 'posts_per_page' => -1);
 $loop = new WP_Query($args);
 
 ?>
 <div class="container-fluid container-responsive" id="news-list">
     <div class="container">
         <?php
-
         while ($loop->have_posts()) {
             $loop->the_post();
             $thumb_id = get_post_thumbnail_id();
@@ -34,26 +28,13 @@ $loop = new WP_Query($args);
                     </a>
                 </div>
                 <div class="item-body col-xs-12 col-sm-12 col-md-8">
-                    <h4 class="item-heading"><a href="<?php echo esc_url(get_permalink()) ?>"><?php the_title(); ?></a>
+                    <h4 class="item-heading"><a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
                     </h4>
                     <?php the_content(); ?>
-                    <div><?= $smallDescription; ?></div>
+                    <div><?= $smallDescription ?></div>
                 </div>
             </div>
         <?php } ?>
-        <?php
-        echo '<div class="pagination">';
-            $big = 999999999; // need an unlikely integer
-            echo paginate_links(array(
-                'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-                'format' => '?paged=%#%',
-                'current' => max(1, get_query_var('paged')),
-                'total' => $loop->max_num_pages,
-                'prev_text' => __('<'),
-                'next_text' => __('>')
-            ));
-        echo '</div>';
-        ?>
-
     </div>
 </div>
+
