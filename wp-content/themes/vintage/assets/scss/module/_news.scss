@@ -1,5 +1,27 @@
 #news-list {
   padding-bottom: 15px;
+
+  .left {
+    margin-top: 15px;
+    padding: 15px;
+    background: $primary;
+
+    .title-item {
+      margin: 5px 0;
+      padding: 5px 0;
+
+      & + .title-item {
+        border-top: 1px dotted lighten($primary, 20%);
+      }
+
+      a {
+        color: white;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+    }
+  }
+
   .item {
     color: $text-color;
     background: $primary;
@@ -60,5 +82,62 @@
         background: rgba($primary, 0.5);
       }
     }
+  }
+}
+
+#news-detail {
+
+}
+
+#news-list-renew {
+  background: url(../../assets/img/bkg_stripe_brotherhood.png);
+  padding: 15px 0 15px;
+
+  .container-inner {
+    min-height: 100%;
+    background: white;
+    padding: 15px 0 15px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+
+    .item {
+      padding: 5px;
+      display: flex;
+      margin-bottom: 5px;
+      border: 1px solid rgba(grey, 0.3);
+
+      &.selected {
+        background: rgba(grey, 0.1);
+      }
+
+      .pic {
+        width: 70px;
+        height: 50px;
+        border: 1px solid rgba(grey, 0.3);
+        flex-shrink: 0;
+        margin-right: 7px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .name {
+        a {
+          color: rgba(black, 0.8);
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .right {
+    border-left: 1px solid rgba(grey, 0.3);
+    min-height: calc(100% - 30px);
   }
 }
